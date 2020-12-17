@@ -3,8 +3,8 @@ services:
   - docker
 
 before_install:
-  - docker build -t abhijitsendocker/docker-absen -f Dockerfile.dev Dockerfile.dev
+  - docker build -t StephenGrider/docker-react -f Dockerfile.dev Dockerfile.dev
 
 script:
-  - docker run abhijitsendocker/docker-absen npm run test -- --coverage
+  - docker run StephenGrider/docker-react npm run test -- --coverage
   
